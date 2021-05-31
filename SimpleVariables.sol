@@ -1,4 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
+// Author   : Orhan YILDIRIM
+// GitHub   : @Psych-Kicks
+// Medium   : @orhan_yildirim
+// Twitter  : @Psych_Kicks
+
 pragma solidity 0.8.4;
 
 contract  WorkingWithVariables {
