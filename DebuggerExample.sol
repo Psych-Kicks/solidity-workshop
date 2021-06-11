@@ -1,9 +1,10 @@
-// SPDX-License-Identifier: MIT
-// Author   : Orhan YILDIRIM
-// Email    : orhan_yil@msn.com
-// GitHub   : @Psych-Kicks
-// Medium   : @orhan_yildirim
-// Twitter  : @Psych_Kicks
+/* SPDX-License-Identifier: MIT
+ Author   : Orhan YILDIRIM
+ Email    : orhan_yil@msn.com
+ GitHub   : @Psych-Kicks
+ Medium   : @orhan_yildirim
+ Twitter  : @Psych_Kicks
+ */
 
 
 pragma solidity ^0.5.13;
