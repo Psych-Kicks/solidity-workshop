@@ -12,3 +12,19 @@ web3.eth.getBalance("0xE41f9122d14D2aA17E1076dc88a7F1bddaA031e2").then(function(
 
 #sendTransaction
 web3.eth.sendTransaction({from: "0xE41f9122d14D2aA17E1076dc88a7F1bddaA031e2", to:"0x1Fd541360d937258f61aA1bd3ea6335063A03A99", value: web3.utils.toWei("1", "ether")});
+
+
+#Using Web3.js for contract interaction
+web3.eth.call({from:"0xE41f9122d14D2aA17E1076dc88a7F1bddaA031e2", to:"0x595557ba4686C3Aa2181EAA0C1d00FdC701C6C9c", data:"0x06540f7e"}).then(console.log);
+
+
+
+# Using ABI array to interact in an easier way with our smart contract
+const Web3 = require('web3'); 
+const web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:7545'));
+web3.eth.call({from: 'ACCOUNT_IN_GANACHE', to: 'SMART_CONTRACT_ADDRESS', data:'0x06540f7e'}).then(console.log);
+web3.utils.sha3("myUint()");
+web3.utils.sha3("myUint()").substr(0,10);
+var myContract = new web3.eth.Contract(PASTE_ABI_ARRAY_HERE, 'CONTRACT_ADDRESS');
+myContract.methods.myUint().call().then(console.log).catch()console.error);
+myConstract.methods.setUint(50).send({from: 'FIRST_ACCOUNT_FROM_GANACHE'}).then(result => {console.log(result); myContract.methods.myUint().call().then(console.log);}).catch(console.error);
