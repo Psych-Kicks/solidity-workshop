@@ -1,0 +1,14 @@
+
+npm init -y
+
+nmp install --save web3
+
+#in node
+let Web3 = require("web3");
+let web3 = new Web3(new Web3.providers.HttpProvider("https://localhost:7545"));
+
+#getBalance
+web3.eth.getBalance("0xE41f9122d14D2aA17E1076dc88a7F1bddaA031e2").then(function(result) {console.log(web3.utils.fromWei(result,"ether"))});
+
+#sendTransaction
+web3.eth.sendTransaction({from: "0xE41f9122d14D2aA17E1076dc88a7F1bddaA031e2", to:"0x1Fd541360d937258f61aA1bd3ea6335063A03A99", value: web3.utils.toWei("1", "ether")});
