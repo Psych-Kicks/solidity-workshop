@@ -1,3 +1,12 @@
+ /*
+ SPDX-License-Identifier: GPL-3.0
+ Author   : Orhan YILDIRIM
+ Email    : orhan_yil@msn.com
+ GitHub   : @Psych-Kicks
+ Medium   : @orhan_yildirim
+ Twitter  : @Psych_Kicks
+ */
+
 pragma solidity ^0.6.0;
 
 import "./Item.sol";
